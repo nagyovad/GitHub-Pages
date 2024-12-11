@@ -6,21 +6,24 @@ body {
     text-align: center;
 }
 
-
 /* Styl pro jednotlivé části kódu */
 
 h1 {
     font-size: 40px;
     color: #63012a;
     margin: 20px 0;
+    text-align: center;
 }
-
+}
 
 a {
     color: #3498db;
     font-weight: bold;
 }
 
+a:hover {
+    color: #1abc9c;
+}
 
 img {
     border-radius: 10px;
@@ -33,4 +36,39 @@ p {
     margin: 20px;
 }
 
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0; 
+}
+
+li a {
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/* Měnění velikosti */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
 
